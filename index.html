@@ -273,9 +273,9 @@
 	    // Check to make sure that this message came from the correct domain.
 	    console.log("recieve msg");
 	    console.log("Event received: " + JSON.stringify(e.data));
-	    if (e.data.action == "requestPage"){
-		 console.log("inside the recieve if message")
-	        sendMessage({actionType: 'ameliaConversationAttributes', actionData: {"pageReferrer": "testing"}})
+	    if (e.data.action == "nav_pst5"){
+		 console.log("inside the recieve if message"+e.data.action)
+	        window.location.href = "https://www.google.co.in";
 	    }
    }
 
